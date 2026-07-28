@@ -1,10 +1,20 @@
-# Multiple Linear Regression
+# Multiple Linear Regression — Boston Housing
 
 ## Project Overview
 
-This project demonstrates the implementation of Multiple Linear Regression using Python and Machine Learning techniques.
+This project builds and evaluates a Multiple Linear Regression model on the Boston Housing dataset to understand how features like crime rate, number of rooms, and property tax relate to median house value, and to predict prices from those features.
 
-The project uses the Boston Housing dataset to analyze the relationship between multiple independent variables and the target variable, and to build a regression model for prediction.
+## Results
+
+- R² = 0.707 (Adj. R² = 0.698) — the model explains about 70.7% of the variance in median house price (MEDV)
+- F-statistic = 82.72 (p < 0.001) — the model as a whole is statistically significant
+- Strongest predictors (by t-statistic magnitude):
+      LSTAT (% lower-status population): strongest effect overall, negative — higher LSTAT → lower price
+      DIS (distance to employment centers): negative — farther from job centers → lower price
+      PTRATIO (pupil-teacher ratio): negative — worse school ratios → lower price
+      RM (avg. rooms per dwelling): positive — more rooms → higher price
+      NOX (nitric oxide concentration): negative — more pollution → lower price
+
 
 ## Tools and Technologies
 
